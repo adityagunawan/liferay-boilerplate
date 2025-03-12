@@ -1,0 +1,22 @@
+dependencies {
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+	compileOnly project(":modules:member-svc:member-svc-api")
+	cssBuilder group: "com.liferay", name: "com.liferay.css.builder", version: "3.1.4"
+
+	// Testing dependencies
+	testImplementation group: "junit", name: "junit", version: "4.13.2"
+	testImplementation group: "org.mockito", name: "mockito-core", version: "4.8.0"
+	testImplementation group: "org.mockito", name: "mockito-junit-jupiter", version: "4.8.0"
+	testImplementation group: "com.liferay", name: "com.liferay.arquillian.extension.junit.bridge", version: "1.0.15"
+	testImplementation group: "com.liferay.portal", name: "release.dxp.api"
+	testImplementation project(":modules:member-svc:member-svc-api")
+}
+
+repositories {
+	mavenCentral()
+	maven { url "https://repository-cdn.liferay.com/nexus/content/groups/public" }
+}
+
+test {
+	useJUnit()
+}

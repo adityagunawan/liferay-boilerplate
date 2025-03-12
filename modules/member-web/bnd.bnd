@@ -1,0 +1,7 @@
+Bundle-Name: member-web
+Bundle-SymbolicName: com.boilerplate.member.web
+Bundle-Version: 1.0.0
+Export-Package: com.boilerplate.member.web.constants
+Provide-Capability:\
+	liferay.language.resources;\
+		resource.bundle.base.name="content.Language"

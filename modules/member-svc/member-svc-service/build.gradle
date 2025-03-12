@@ -1,0 +1,12 @@
+dependencies {
+	api project(":modules:member-svc:member-svc-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+}
+
+buildService {
+	apiDir = "../member-svc-api/src/main/java"
+	testDir = "../member-svc-test/src/testIntegration/java"
+}
+
+group = "com.boilerplate.member.svc"

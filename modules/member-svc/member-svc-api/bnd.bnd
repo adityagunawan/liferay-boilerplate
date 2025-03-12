@@ -1,0 +1,10 @@
+Bundle-Name: member-svc-api
+Bundle-SymbolicName: com.boilerplate.member.svc.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.boilerplate.member.svc.exception,\
+	com.boilerplate.member.svc.model,\
+	com.boilerplate.member.svc.service,\
+	com.boilerplate.member.svc.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../member-svc-service/service.xml
