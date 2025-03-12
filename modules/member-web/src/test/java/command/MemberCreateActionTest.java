@@ -2,7 +2,7 @@ package command;
 
 import com.boilerplate.member.svc.model.Member;
 import com.boilerplate.member.svc.service.MemberLocalService;
-import com.boilerplate.member.web.command.MemberCreateAction;
+import com.boilerplate.member.web.command.action.MemberCreateAction;
 import com.liferay.counter.kernel.service.CounterLocalService;
 import org.junit.Before;
 import org.junit.Test;

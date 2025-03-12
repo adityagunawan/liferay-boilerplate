@@ -44,6 +44,7 @@ public class MemberWebPortlet extends MVCPortlet {
 	@Override
 	public void doView(RenderRequest renderRequest, RenderResponse renderResponse) throws IOException, PortletException {
 		log.info(String.format("call MemberLocalService %s data", memberLocalService.getMembersCount()));
+		renderRequest.setAttribute("members", memberLocalService.getMembers(-1, -1));
 		super.doView(renderRequest, renderResponse);
 	}
 

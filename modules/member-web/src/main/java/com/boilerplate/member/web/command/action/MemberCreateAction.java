@@ -1,4 +1,4 @@
-package com.boilerplate.member.web.command;
+package com.boilerplate.member.web.command.action;
 
 import com.boilerplate.member.svc.model.Member;
 import com.boilerplate.member.svc.service.MemberLocalService;
